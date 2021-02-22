@@ -1,0 +1,10 @@
+.features {
+    background-color: $veryLightGray;
+    display: grid;
+    grid-template-columns: 100%;
+    gap: 1.1rem;
+
+        &_heading > p{
+            margin-top: 0.8rem;
+        }
+    }
