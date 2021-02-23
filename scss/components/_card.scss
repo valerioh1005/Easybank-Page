@@ -1,25 +1,4 @@
 /*========= Cards Section ============*/ 
 
-.card-section {
-    display: grid;
-    grid-template-columns: 100%;
-    gap: 1.1rem;
-    align-items: center;
-    justify-content: center;
-}
 
-.card {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 
-    &-body {
-        margin: 5px 18px auto;
-        line-height: 1.5;
-    }
-
-    &_img {
-        height: 15.6rem;
-        object-fit: contain;
-    }
-}

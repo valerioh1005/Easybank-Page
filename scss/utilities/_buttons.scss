@@ -1,8 +1,0 @@
-@mixin btn-primary {
-    background: linear-gradient( hsl(136, 65%, 51%),
-     hsl(192, 70%, 51%));
-    color: $white;
-    border-radius: 40px;
-    padding: 1rem;
-    @include typo-1;
-}
