@@ -1,25 +1,60 @@
-.flex-1 {
+// Flexbox Helpers/Utility Classes
+
+.flex {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+
+    &-jc-sb {
+        justify-content: space-between;
+    }
+
+    &-jc-c {
+        justify-content: center;
+    }
+
+    &-jc-sa {
+        justify-content: space-around;
+    }
+
+    &-ai-c {
+        align-items: center;
+    }
 }
 
+/*===== Text Centering Class =====*/
 .text-align {
     text-align: center;
 }
 
-.my-1 {
-    margin: 1rem 0;
+/*====== Margin Class ====*/
+.my {
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
 }
 
-.my-2 {
-    margin: 2rem 0;
+.mx {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }
 
-.py-1 {
-    padding: 2rem 0;
+.mt {
+    margin-top: 2.25rem; 
 }
 
-.p-1 {
-    padding: 1.5rem
+.mr {
+    margin-right: 1.5rem; 
+}
+
+.mb {
+    margin-bottom: 2.25rem;
+}
+
+.ml {
+    margin-left: 1.5rem;
+}
+
+.m-all {
+    margin-top: 2.25rem;
+    margin-bottom: 2.25rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
 }

@@ -1,0 +1,36 @@
+.header {
+    background-color: $white;
+    padding: 20px 0;
+
+
+    &__menu {
+        cursor: pointer;
+        > span {
+            display: block;
+            width: 26px;
+            height: 3px;
+            border-radius: 5px;
+            background-color: $darkBlue;
+            
+             
+            &:not(:last-child) {
+                margin-bottom: 3px;
+            }
+        }
+        
+    }
+
+    &__links {
+        >a {
+            padding: 0 1rem;
+            color: $darkBlue;
+        }
+    }
+
+    &__btn {
+        color: $white;
+        background: linear-gradient($limeGreen, $brightCyan);
+        padding: 0.9rem;
+        border-radius: 30px;
+    }
+}

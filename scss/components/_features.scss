@@ -1,1 +1,79 @@
+.features {
+    background-color: $lightGrayishBlue;
+    height: 100%;
+    padding: 6rem 0;
+    display: flex;
+
+
+    @include breakpoint-down(small) {
+        .container {
+            padding: 0 1.1rem;
+        }
+    }
+
+    &__heading {
+        >h1 {
+            font-size: 2rem;
+        }
+
+        >p {
+            margin-bottom: 4rem;
+            line-height: 1.7;
+        }
+
+        @include breakpoint-down(small) {
+            text-align: center;
+        }
+    }
+
+    &__grid {
+     
+
+        @include breakpoint-up(medium) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    }
+ 
+
+    &__item {
+        @include breakpoint-down(small) {
+            text-align: center;
+            margin-top: 1.75rem;
+        }
+
+        @include breakpoint-up(medium) {
+            flex: 1 0 50%;
+            margin-top: 1.3rem;
+            padding: 0 11px;
+        }
+
+        @include breakpoint-up(large) {
+            flex: 1 0 50%;
+            margin-top: 1.3rem;
+        }
+
+        @include breakpoint-up(xlarge) {
+            flex: 1;
+        }
+    }
+
+    &__icon {
+        margin-bottom: 2.5rem;
+    }
+
+    &__title {
+        margin-bottom: 2rem;
+        font-size: 1.3rem;
+    }
+
+    &__description {
+        line-height: 2;
+    }
+
+}
 

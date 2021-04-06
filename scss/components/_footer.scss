@@ -1,0 +1,116 @@
+.footer {
+    background-color: $darkBlue;
+    color: $white;
+    text-align: center;
+    padding-top: 2.3rem;
+    padding-bottom: 2.6rem;
+    /* height: 34.5rem;*/
+
+    @include breakpoint-up(large) {
+        display: grid;
+        grid-template-columns: 1fr, 1fr, 1fr, 2fr;
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+            "logo col1 col2 cta"
+            "social col1 col2 cta";
+        align-items: center;
+
+        &__logo {
+            grid-area: logo;
+        }
+
+        &__links {
+
+            >div {
+                line-height: 2.5;
+            }
+
+            &.col1 {
+                grid-area: col1;
+
+            }
+
+            &.col2 {
+                grid-area: col2;
+
+            }
+        }
+
+        &__cta {
+            grid-area: cta;
+            margin-top: 2.1rem;
+        }
+
+        &__social {
+            grid-area: social;
+            margin-left: 2rem;
+        }
+
+    }
+
+
+    &__logo {
+        margin-bottom: 1.9rem;
+        display: block;
+
+    }
+
+    &__social {
+        margin-bottom: 1.9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+
+        >a {
+            display: inline-block;
+            margin-right: 1.2rem;
+
+            >img {
+                width: 1.7rem;
+            }
+        }
+
+    }
+
+    &__links {
+        margin-bottom: 1.7rem;
+
+
+
+        &.col1 {
+            @include flexy;
+            font-size: 1.1rem;
+        }
+
+        &.col2 {
+            @include flexy;
+            font-size: 1.1rem;
+        }
+    }
+
+    &__cta {
+        margin-bottom: 1.9rem;
+
+        >a {
+            &.btn {
+                display: inline-block;
+
+
+
+                color: $white;
+                background: linear-gradient($limeGreen, $brightCyan);
+                padding: 0.9rem 1.8rem;
+                border-radius: 30px;
+            }
+        }
+
+        >div {
+            &.copyright {
+                margin-top: 1.7rem;
+                opacity: 0.4;
+                font-size: 1.1rem;
+            }
+        }
+    }
+}

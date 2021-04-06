@@ -1,0 +1,96 @@
+/* Global Styles */
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+   
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+    overflow-x: hidden;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+
+
+
+// Container & Padding Classes
+
+.container {
+    max-width: 85.375rem;
+    margin: 0 auto;
+    width: 100%;
+    
+
+    &--py{
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
+    }
+
+    &--px {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+    }
+
+    &--pt {
+        padding-top: 2.25rem;
+    }
+
+    &--pr {
+        padding-right: 1.5rem;
+    }
+
+    &--pb {
+        padding-bottom: 2.25rem;
+    }
+
+    &--pl {
+        padding-left: 1.5rem;
+    }
+
+    &--pall {
+        padding-top: 2.25rem;
+        padding-bottom: 2.25rem;
+        padding-right: 3.5rem;
+        padding-left: 3.5rem;
+    }
+
+    .py {
+        padding: 6.25rem;
+    }
+}
+
+// Visibility Classes // 
+
+
+.hide-for-mobile {
+    @include breakpoint-down("small") {
+        display: none;
+    }
+
+}
+
+.hide-for-tablet {
+    @include breakpoint-down("medium") {
+        display: none;
+    }
+
+}
+
+.hide-for-desktop {
+    @include breakpoint-up("large") {
+        display: none;
+    }
+
+}

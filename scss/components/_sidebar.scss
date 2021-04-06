@@ -1,0 +1,32 @@
+.sidebar  {
+    position: fixed;
+    height: 100%;
+    width: 60%;
+    top: 0;
+    left: 0;
+    background-color: $lightGrayishBlue;
+    z-index: 999;
+    transform: translateX(-600px);
+    transition: 0.5s ease-in-out;
+    opacity: 0.96;
+
+    &.show {
+        transform: translateX(-20px);
+    }
+    
+    > a {
+        color: $darkBlue;
+        display: block;
+        padding: 1.3rem;
+        margin-left: 2rem;
+        transition: 0.2s ease-in-out;
+
+        &:hover {
+            font-size: 1.2rem;
+        }
+    }
+
+    
+}
+
+
