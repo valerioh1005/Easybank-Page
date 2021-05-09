@@ -14,11 +14,13 @@
     &__heading {
         >h1 {
             font-size: 2rem;
+            opacity: 0.75;
         }
 
         >p {
             margin-bottom: 4rem;
             line-height: 1.7;
+            opacity: 0.5;
         }
 
         @include breakpoint-down(small) {
@@ -27,15 +29,23 @@
     }
 
     &__grid {
-     
+        
 
         @include breakpoint-up(medium) {
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
             align-items: center;
+            gap: 0;
         }
 
+        @include breakpoint-up(large) {
+            gap: 2.1875rem;
+        }
+
+        @include breakpoint-down(large) {
+            gap: 0;
+        }
 
     }
  
@@ -45,6 +55,8 @@
             text-align: center;
             margin-top: 1.75rem;
         }
+
+      
 
         @include breakpoint-up(medium) {
             flex: 1 0 50%;
@@ -69,10 +81,12 @@
     &__title {
         margin-bottom: 2rem;
         font-size: 1.3rem;
+        opacity: 0.7;
     }
 
     &__description {
         line-height: 2;
+        opacity: 0.5;
     }
 
 }

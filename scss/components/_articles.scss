@@ -19,6 +19,7 @@
             >h2 {
                 margin-bottom: 3.5rem;
                 font-size: 2rem;
+                opacity: 0.6;
             }
 
             @include breakpoint-down(small) {
@@ -43,6 +44,8 @@
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            
 
             @include breakpoint-up(xlarge) {
                 display: grid;
@@ -91,6 +94,7 @@
         &__author {
             font-size: 0.8rem;
             margin: 1rem 0.9rem 0;
+            opacity: 0.5;
 
             @include breakpoint-down(small) {
                 text-align: left;
@@ -100,6 +104,7 @@
         &__title {
             font-size: 1.5rem;
             margin: 1rem 0.9rem 0;
+            opacity: 0.8;
 
             @include breakpoint-down(small) {
                 text-align: left;
@@ -108,7 +113,8 @@
 
         &__description {
             margin: 1rem 0.9rem 0;
-            line-height: 1.4;
+            line-height: 1.55;
+            opacity: 0.5;
 
             @include breakpoint-down(small) {
                 text-align: left;

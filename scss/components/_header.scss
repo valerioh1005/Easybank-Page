@@ -21,16 +21,52 @@
     }
 
     &__links {
-        >a {
+        a {
+            
+            position: relative;
             padding: 0 1rem;
             color: $darkBlue;
+
+            &::before {
+                content: "";
+                position: absolute;
+                display: block;
+                height: 4px;
+                background: $limeGreen;
+                left: 20px;
+                right: 20px;
+                bottom: -30px;
+                opacity: 0;
+                transition: 0.2s ease-in;
+            }
+
+                &:hover {
+                    
+                    &::before {
+                        opacity: 1;
+                        
+                    }
+                }
+             
+
+            
         }
+       
+       
     }
+
 
     &__btn {
         color: $white;
         background: linear-gradient($limeGreen, $brightCyan);
         padding: 0.9rem;
         border-radius: 30px;
-    }
+        transition: opacity 0.2s ease-in-out;
+
+        &:hover {
+            opacity: 0.75;
+        }
+    } 
+
 }
+
